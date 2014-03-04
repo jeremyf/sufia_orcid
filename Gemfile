@@ -28,6 +28,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'sufia'
+gem 'kaminari', github: 'harai/kaminari', branch: 'route_prefix_prototype'  # required to handle pagination properly in dashboard. See https://github.com/amatsuda/kaminari/pull/322
+gem 'font-awesome-sass-rails'
+
+# gem 'orcid', github: 'jeremyf/orcid'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
