@@ -32,6 +32,7 @@ gem 'kaminari', github: 'harai/kaminari', branch: 'route_prefix_prototype'  # re
 gem 'font-awesome-sass-rails'
 
 gem 'orcid', github: 'jeremyf/orcid'
+gem 'thin'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
