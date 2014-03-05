@@ -76,5 +76,10 @@ $("a[rel=popover]").popover({ html: true });
     <i class="icon-caret-right"></i> <%= g %><br />
   <% end %>
   <hr />
+</div>
+
+<div class="span53 offset1 well">
+  <h3><i class="icon-user"></i> Open Researcher and Contributor ID (ORCID) <%= link_to 'What is ORCID?', 'http://orcid.org/', :class => 'btn btn-mini btn-primary' %></h3>
   <%= render "orcid/profile_connections/orcid_connector" %>
 </div>
+
