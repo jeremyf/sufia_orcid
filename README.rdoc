@@ -23,6 +23,7 @@ Things you may want to cover:
 
 * ...
 
+* Start the server with thin `thin start -p 3000 --ssl --ssl-verify --ssl-key-file server.key --ssl-cert-file server.crt`
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
