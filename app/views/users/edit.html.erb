@@ -75,4 +75,6 @@ $("a[rel=popover]").popover({ html: true });
   <% current_user.groups.each do |g| %>
     <i class="icon-caret-right"></i> <%= g %><br />
   <% end %>
+  <hr />
+  <%= render "orcid/profile_connections/orcid_connector" %>
 </div>
