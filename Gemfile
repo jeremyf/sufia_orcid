@@ -31,7 +31,7 @@ gem 'sufia'
 gem 'kaminari', github: 'harai/kaminari', branch: 'route_prefix_prototype'  # required to handle pagination properly in dashboard. See https://github.com/amatsuda/kaminari/pull/322
 gem 'font-awesome-sass-rails'
 
-gem 'orcid', github: 'jeremyf/orcid'
+gem 'orcid', github: 'projecthydra-labs/orcid'
 gem 'thin'
 
 group :doc do
