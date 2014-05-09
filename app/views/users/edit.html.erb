@@ -78,8 +78,8 @@ $("a[rel=popover]").popover({ html: true });
   <hr />
 </div>
 
-<div class="span53 offset1 well">
-  <h3><i class="icon-user"></i> Open Researcher and Contributor ID (ORCID) <%= link_to 'What is ORCID?', 'http://orcid.org/', :class => 'btn btn-mini btn-primary' %></h3>
-  <%= render :partial => 'orcid/profile_connections/orcid_connector', :locals => {:user => @user} %>
-</div>
-
+<% if defined?(Orcid) %>
+  <div class="span53 offset1 well">
+  <%= render partial: 'orcid/profile_connections/orcid_connector', locals: {default_search_text: current_user.name } %>
+  </div>
+<% end %>
