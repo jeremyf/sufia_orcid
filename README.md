@@ -34,7 +34,7 @@ At this point you should be ready.
   1. Your credentials - which can be found in `./db/seeds.rb` - are:
     1. **Email:** orcid@sufia.org
     1. **Password:** icanhazorcid
-    1. ***Note:** The email used to sign in to this application need not match any of the emails associated with an ORCiD.*
+    1. *Note: The email used to sign in to this application need not match any of the emails associated with an ORCiD.*
 1. Edit your profile
   1. Click on your email in the top right corner
   1. Then click "[Edit your Profile](https://localhost:3000/users/orcid@sufia-dot-org/edit)"
