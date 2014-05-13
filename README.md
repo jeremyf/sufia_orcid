@@ -27,7 +27,7 @@ It provides [instructions for registering your application](https://github.com/p
 
 At this point you should be ready.
 
-1. Run `$ thin start -p 3000 --ssl --ssl-key-file server.key --ssl-cert-file server.crt`
+1. Run `$ bundle exec thin start -p 3000 --ssl --ssl-key-file server.key --ssl-cert-file server.crt`
   1. *If you use a different port than 3000, the links in these instructions won't work.*
 1. In your browser of choice, go to [https://localhost:3000](https://localhost:3000)
 1. Click on "[Login](https://localhost:3000/users/sign_in)"
