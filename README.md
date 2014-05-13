@@ -22,8 +22,8 @@ It provides [instructions for registering your application](https://github.com/p
 1. Generate a [self-signed SSL certificate](http://www.akadia.com/services/ssh_test_certificate.html) (steps 1–4).
   1. The instructions assume your certificate filenames will be `server.key` and `server.crt`
 1. Run `$ bundle install`
+1. Create your own application configuration `cp ./config/application.yml.example ./config/application.yml` and update it with your ORCID application credentials.
 1. Run `$ rake bootstrap`
-1. Update `./config/application.yml` with your ORCID application credentials.
 
 At this point you should be ready.
 
