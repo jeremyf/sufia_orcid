@@ -13,7 +13,4 @@ task :bootstrap do
   Rake::Task['db:create'].invoke
   Rake::Task['db:schema:load'].invoke
   Rake::Task['db:seed'].invoke
-  source = File.expand_path('../config/application.yml.example', __FILE__)
-  target = File.expand_path('../config/application.yml', __FILE__)
-  FileUtils.cp(source, target)
 end

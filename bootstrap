@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby -wKU
+
+require 'fileutils'
+source = File.expand_path('../config/application.yml.example', __FILE__)
+target = File.expand_path('../config/application.yml', __FILE__)
+FileUtils.cp(source, target)
+`rake bootstrap`
