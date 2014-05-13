@@ -18,16 +18,17 @@ This is being prepared for a May 21st, 2014 meeting in Chicago.
 Running this application locally: (*Note: this assumes you have Rails ready environment*)
 
 1. Review the [Orcid gem's README](https://github.com/projecthydra-labs/orcid/blob/master/README.md).
-It provides instructions for registering your application.
-1. Generate a [self-signed SSL certificate](http://www.akadia.com/services/ssh_test_certificate.html).
+It provides [instructions for registering your application](https://github.com/projecthydra-labs/orcid/blob/master/README.md#registering-for-an-orcid-application-profile).
+1. Generate a [self-signed SSL certificate](http://www.akadia.com/services/ssh_test_certificate.html) (steps 1–4).
   1. The instructions assume your certificate filenames will be `server.key` and `server.crt`
 1. Run `$ bundle install`
-1. Run `$ rake bootstrap`
+1. Run `$ ./bootstrap`
 1. Update `./config/application.yml` with your ORCID application credentials.
 
 At this point you should be ready.
 
-1. Run `$ thin start -p 3000 --ssl --ssl-key-file server.key --ssl-cert-file server.crt`
+1. Start Jetty `$ rake jetty:start`
+1. Start the application `$ bundle exec thin start -p 3000 --ssl --ssl-key-file server.key --ssl-cert-file server.crt`
   1. *If you use a different port than 3000, the links in these instructions won't work.*
 1. In your browser of choice, go to [https://localhost:3000](https://localhost:3000)
 1. Click on "[Login](https://localhost:3000/users/sign_in)"
