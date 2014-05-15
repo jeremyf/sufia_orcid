@@ -39,3 +39,7 @@
   line-height:1;
   opacity:.9;
 }
+
+#footer-wrapper {
+  margin-bottom:800px; // To help with taking screenshots
+}
